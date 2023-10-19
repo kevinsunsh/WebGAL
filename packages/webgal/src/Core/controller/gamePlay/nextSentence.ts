@@ -1,13 +1,13 @@
 import { scriptExecutor } from './scriptExecutor';
-import { IRunPerform } from '@/Core/Modules/perform/performInterface';
 import { logger } from '../../util/etc/logger';
 import { webgalStore } from '@/store/store';
 import { resetStageState } from '@/store/stageReducer';
 import cloneDeep from 'lodash/cloneDeep';
-import { WebGAL } from '@/main';
 import { IBacklogItem } from '@/Core/Modules/backlog';
 
 import { SYSTEM_CONFIG } from '@/Core/config/config';
+import { WebGAL } from '@/Core/WebGAL';
+import { IRunPerform } from '@/store/stageInterface';
 
 /**
  * 进行下一句
